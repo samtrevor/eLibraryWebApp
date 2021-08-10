@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function validateForm() {
+		var id = document.myForm.id.value;
+		var name = document.myForm.name.value;
+		var pass = document.myForm.password.value;
+		var email = document.myForm.email.value;
+		var mobile = document.myForm.mobile.value;
+
+		if (id == null || id == "") {
+			alert("Id can't be blank!");
+			return false;
+		} else if (name == null || id == "") {
+			alert("User Name can't be blank!");
+			return false;
+		} else if (pass.length < 6) {
+			alert("Passwword must be atleast 6 characters long!");
+			return false;
+		} else if (email == null || email == "") {
+			alert("Email can't be blank!");
+			return false;
+		} else if (mobile == null || mobile == "") {
+			alert("Mobile can't be blank!");
+			return false;
+		}
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="style-content.css">
+</head>
+<body>
+
+	<div class="librarian-div">
+		<form action="AddLibrarian" method="post" name="myForm" class="addlibrarianform"
+			onsubmit="return validateForm()">
+			<table>
+				<tr>
+					<th>ADD LIBRARIAN</th>
+				</tr>
+				<tr>
+					<td><label for="id">Id</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="id" id="id" placeholder="Id"></td>
+				</tr>
+				<tr>
+					<td><label for="name">Name</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="name" id="name"
+						placeholder="Name"></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password</label></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="password" id="password"
+						placeholder="Password"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email Address</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="email" id="email"
+						placeholder="Email"></td>
+				</tr>
+				<tr>
+					<td><label for="mobile">Mobile Number</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="mobile" id="mobile"
+						placeholder="Mobile"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

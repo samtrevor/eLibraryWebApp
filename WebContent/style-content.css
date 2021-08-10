@@ -1,0 +1,155 @@
+html{
+	background-image: url(images/library1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body{
+	margin: 0px;
+	/*background-image: url(images/library1.png);*/
+}
+.container{
+	margin: 0;
+	padding: 0;
+}
+.nav nav ul{
+	list-style-type: none;
+	position: fixed;
+	background-color: black;
+	margin: 0;
+	width: 100%;
+	top: 0;
+	overflow: hidden;
+}
+li{
+	float: left;/*or you can use display:inline;*/
+}
+li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 14px 16px;
+	text-align: center;
+	font-family: Verdana;
+}
+li a.active{
+	background-color: blue;
+}
+li a:HOVER:NOT(.active), li a:ACTIVE {
+	background-color: #0080ff;
+}
+@keyframes h2Anime{
+	0%{transform: rotate(0deg);left: 0px;}
+	25%{transform: rotate(20deg);left: 0px;}
+	50%{transform: rotate(0deg);left: 85%;}
+	55%{transform: rotate(0deg);left: 85%;}
+	75%{transform: rotate(0deg);left: 85%;background: #1ec7e6}
+	100%{transform: rotate(-1080deg);left: 0px;}
+}
+h2{
+	/*display: inline-block;*/
+	margin: 80px 20px;
+	padding: 20px;
+	position: relative;
+	border-radius: 20px;
+	font-family: Verdana;
+	color: white;
+	width: 100px;
+	height: 30px; 
+	background: #92B901;
+	animation: h2Anime 5s 1;
+	animation-delay: 2s;
+}
+div.admin, div.librarian, div.librarian-div, .book{
+	background-color: black;
+	margin-left: 12px;
+	opacity: 0.8;
+}
+div.librarian{
+	margin-right: 20px;
+}
+ div.librarian-div, div.book{
+ 	margin: 120px;
+ }
+.form-admin, .form-librarian, .addlibrarianform, .bookform{	
+	opacity: 1.0;
+	width: 100%;
+	padding: 40px;
+}
+.view{
+	margin: 80px;
+}
+.view-book{
+	margin: 150px;;
+}
+.view-table{
+	border-collapse: collapse;
+	width: 100%;
+	background-color: black;
+}
+.view-th{
+	background-color: navy;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: large;
+}
+.view-th, .view-td, .view-book{
+	text-align: left;
+	padding: 8px;
+	color: white;
+}
+.view-td a:VISITED{
+	color: green;
+}
+.view-td a:HOVER{
+	color: red;
+}
+div.view tr:nth-child(even), div.view-book tr:nth-child(even){
+	background-color: #8f8f8f;
+}
+th{
+	background-color: #8080ff;
+	opacity: 1.0;
+	color: black;
+	margin: 0;
+	padding: 10px 20px;
+}
+label{
+	color: white;
+	font-weight: bold;
+	opacity:1.0;
+}
+input{
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	max-width: 100%
+}
+input:HOVER{
+	background-color: #b1b1b1;
+	box-shadow: 0 0 6px blue;
+}
+input[type=text]:FOCUS,input[type=password]:FOCUS{
+	opacity: 1.0;
+	color: black;
+	background-color: white;
+	border: 2px solid #0080c0; 
+}
+input[type=submit]{
+	float: right;
+	margin-top: 12px;
+	transition: width 2s, height 2s;
+}
+input[type=submit]:HOVER {
+	background-color: #8080ff;
+	box-shadow: 0 0 5px red;
+	font-weight: bolder;
+	cursor: pointer;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+	color: white;
+	width: 80px;
+	height: 50px;
+}

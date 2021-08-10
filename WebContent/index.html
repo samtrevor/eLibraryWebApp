@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>eLibrary</title>
+<link rel="stylesheet" type="text/css" href="style-content.css" />
+</head>
+<body>
+	<!-- container -->
+	<div class="container">
+		<!-- nav -->
+		<div class="nav">
+			<nav>
+				<ul>
+					<li><a class="active" href="index.html">eLibrary</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Admin</a></li>
+					<li><a href="#">Librarian</a></li>
+				</ul>
+			</nav>
+			<hr>
+		</div>
+		<!-- end of nav div tag -->
+
+		<h2>
+			<b>eLibrary</b>
+		</h2>
+		<!-- Content area div tag -->
+		<div class="content">
+			<!-- Admin login div tag -->
+	 		<div style="float: left;" class="admin">
+				<form action="Admin" method="post" class="form-admin">
+					<table>
+						<tr>
+							<th>Admin Login</th>
+						</tr>
+						<tr>
+							<td><label for="email">Email Address</label></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="email" id="email"
+								placeholder="Email"></td>
+						</tr>
+						<tr>
+							<td><label for="password">Password</label></td>
+						</tr>
+						<tr>
+							<td><input type="password" name="password" id="password"
+								placeholder="Password"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" value="Login"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- end of admin login div tag -->
+
+			<!-- librarian div tag -->
+	 		<div style="float: right;" class="librarian">
+				<form action="LibrarianLogin" method="post" class="form-librarian">
+					<table>
+						<tr>
+							<th>Librarian Login</th>
+						</tr>
+						<tr>
+							<td><label for="libEmail">Email Address</label></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="libEmail" id="libEmail"
+								placeholder="Email"></td>
+						</tr>
+						<tr>
+							<td><label for="libPassword">Password</label></td>
+						</tr>
+						<tr>
+							<td><input type="password" name="libPassword"
+								id="libPassword" placeholder="Password"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" value="Login"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- end of librarian div tag -->
+		</div>
+		<!-- End of content area div tag -->
+	</div>
+	<!-- end of container div tag -->
+</body>
+</html>
